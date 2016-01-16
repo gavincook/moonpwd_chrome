@@ -1,0 +1,28 @@
+{
+  "name": "moon pwd",
+  "version": "1.0.0",
+  "description": "Auto type moon password.",
+  "permissions": [
+  	"tabs",
+  	"http://*/*",
+  	"https://*/*"
+  ],
+  "browser_action": {
+    "default_title": "moon密码填充",
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["jquery-1.12.0.min.js","jquery.md5.js","background.js"]
+  },
+  "manifest_version":2,
+  "commands": {
+          "fillForm": {
+            "suggested_key": {
+              "default": "Ctrl+Shift+Z",
+              "mac": "Command+Shift+Z"
+            },
+            "description": "fillForm"
+          }
+  }
+}

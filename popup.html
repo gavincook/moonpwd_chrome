@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>moon pwd</title>
+	<script type="text/javascript" src="jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="jquery.md5.js"></script>
+	<script type="text/javascript" src="moonpwd.js"></script>
+	<style type="text/css">
+		body{
+			width:330px;
+		}
+		.label{
+			width: 100px;
+		}
+
+		.pwd{
+			width:200px;
+		}
+
+		.fill-btn{
+			width: 100%;
+		    height: 30px;
+		    border: none;
+		    background: #168BB9;
+		    border-radius: 4px;
+		    color: #FFF;
+		}
+
+		.row{
+			padding: 5px;
+			font-size:14px;
+		}
+
+		.avatar{
+		    position: absolute;
+		    right: 0;
+		    width: 70px;
+		}
+	</style>
+</head>
+<body>
+	<img src="gavincook.png" class="avatar">
+<div class="row">
+	<span class="label">快捷键：</span>
+	<span >Ctrl+Shift+Z</span>
+</div>
+
+<div class="row">
+	<span class="label">当前密码：</span>
+	<span class="pwd"></span>
+</div>
+<button type="button" class="fill-btn">填充密码</button>
+</body>
+</html> 
